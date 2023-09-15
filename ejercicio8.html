@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 8</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main{
+            position: relative;
+            width: 300px; /* Añade un ancho al contenedor principal */
+        height: 600px; /* Añade una altura al contenedor principal */
+
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            width: 300px;
+            height: 600px;
+            transform-origin: center; /* Agrega esta línea */
+            transition: all .5s;
+            transform-style: preserve-3d; /* Agrega esta línea */
+        }
+        div:first-child, div:last-child {
+            backface-visibility: hidden;
+        }
+        div:first-child{
+            background-color: blueviolet;
+            transform: rotateY(0deg);
+        }
+        div:last-child{
+            background-color: aqua;
+            transform: rotateY(180deg);
+
+            transition: all .5s;
+        }
+        main:hover div:last-child{
+            transform: rotateY(0deg);
+        }
+        main:hover div:first-child{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div>frontal</div>
+        <div>reverso</div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 3</title>
+</head>
+<link rel="stylesheet" href="./style.css">
+<style>
+    body {
+        background-color: #09f;
+        color: white;
+    }
+    main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid white;
+        width: 300px;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        border-radius: 15px;
+        background-image: linear-gradient(to right, black, red);
+    }
+    .card-img {
+        width: 60%;
+
+        border: 1px solid black;
+        display: flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: 100%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    .card-info{
+        text-align: center;
+    }
+    .card-texto{
+        text-align: center;
+    }
+    footer a{
+        color: white;
+        font-size: 1rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+</style>
+
+<body>
+    <main>
+        <div class="card">
+
+            <header class="card-img">
+                <img src="./leo.jpg" alt="">
+            </header>
+            <div class="card-info">
+                <h2>Daniel Villalba</h2>
+                <span>Desarrollador font end</span>
+            </div>
+            <div class="card-texto">
+                <p>Desarrollador front end, estudiante de programacion autodidacta</p>
+            </div>
+            <footer>
+                <a href="mailto:example@gmail.com">danielvillalbac97@gmail.com</a>
+                <a href="number:1151387649">1151387649</a>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .galeria{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            width: 100%;
+            margin:1.5rem auto;
+            justify-content: center;
+        }
+        .card-item{
+            width: 18%;
+        }
+        img{
+            width: 100%;
+        }
+        @media(max-width:1000px){
+            .galeria{
+                gap:1rem
+            }
+            .card-item{
+                width: 30%;
+            }
+        }
+        @media(max-width:700px){
+            .card-item{
+                width: 45%;
+            }
+        }
+        @media(max-width:500px){
+            .card-item{
+                width: 100%;
+            }
+            .galeria{
+                margin: 0;
+            }
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <section class="galeria">
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+        <div class="card-item">
+            <img src="./leo.jpg" alt="leo" />
+        </div>
+    </section>
+</body>
+
+</html>

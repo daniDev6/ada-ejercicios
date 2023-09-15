@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector sin opción seleccionable</title>
+    <style>
+        /* Estilos para ocultar la primera opción */
+        #miSelector option:first-child {
+            display: none;
+        }
+        input{
+            
+        }
+    </style>
+</head>
+<body>
+    <select id="miSelector">
+        <option value="opcion1" selected>Selecciona una opción</option>
+        <option value="opcion2">Opción 1</option>
+        <option value="opcion3">Opción 2</option>
+        <option value="opcion4">Opción 3</option>
+    </select>
+</body>
+</html>
